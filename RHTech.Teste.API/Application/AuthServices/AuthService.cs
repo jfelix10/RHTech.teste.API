@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Microsoft.IdentityModel.Tokens;
 using RHTech.Teste.API.Domain.Entities.Users;
+using RHTech.Teste.API.Interfaces.Application.Authservices;
 using System.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -9,7 +10,7 @@ using System.Text;
 
 namespace RHTech.Teste.API.Application.AuthServices
 {
-    public class AuthService
+    public class AuthService : IAuthService
     {
         private readonly IConfiguration _configuration;
         private readonly IDbConnection _dbConnection;
@@ -87,7 +88,7 @@ namespace RHTech.Teste.API.Application.AuthServices
             return GenerateJwtToken(user);
         }
 
-        private string HashPassword(string password)
+        public string HashPassword(string password)
         {
             using var sha256 = SHA256.Create();
             var bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
@@ -128,7 +129,7 @@ namespace RHTech.Teste.API.Application.AuthServices
                         new Claim(ClaimTypes.Name, user.Name),
                         new Claim(ClaimTypes.Email, user.Email),
                         new Claim(ClaimTypes.Role, user.Role),
-                        new Claim("dEmpresa", user.IdEmpresa.ToString())
+                        new Claim("idEmpresa", user.IdEmpresa.ToString())
                     ]
                 ),
                 Expires = DateTime.UtcNow.AddDays(30),

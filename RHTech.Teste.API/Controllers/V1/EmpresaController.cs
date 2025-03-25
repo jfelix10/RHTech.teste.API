@@ -5,6 +5,7 @@ using RHTech.Teste.API.Domain.Entities;
 using RHTech.Teste.API.Application.Empresas.Commands.CreateEmpresaCommand;
 using RHTech.Teste.API.Interfaces.Infra.Persistence.Dapper.Empresas;
 using RHTech.Teste.API.Application.Empresas.Queries.GetEmpresaCompletaById;
+using YamlDotNet.Core.Tokens;
 
 namespace RHTech.Teste.API.Controllers.V1
 {

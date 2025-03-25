@@ -29,7 +29,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Infra\Persistence\Repositories\EFCore\" />
     <Folder Include="Interfaces\Infra\Persistence\EFCore\" />
   </ItemGroup>
 

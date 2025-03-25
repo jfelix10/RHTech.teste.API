@@ -1,10 +1,7 @@
 ﻿using Asp.Versioning;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
-using RHTech.Teste.API.Application.AuthServices;
 using RHTech.Teste.API.Domain.Entities.Users;
-using YamlDotNet.Core.Tokens;
+using RHTech.Teste.API.Interfaces.Application.Authservices;
 
 namespace RHTech.Teste.API.Controllers.V1
 {
@@ -13,9 +10,9 @@ namespace RHTech.Teste.API.Controllers.V1
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly AuthService _authService;
+        private readonly IAuthService _authService;
 
-        public AuthController(AuthService authService)
+        public AuthController(IAuthService authService)
         {
             _authService = authService;
         }

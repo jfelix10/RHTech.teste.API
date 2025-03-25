@@ -3,6 +3,7 @@ using RHTech.Teste.API.Application.AuthServices;
 using RHTech.Teste.API.Infra.Persistence.Repositories.Dapper;
 using RHTech.Teste.API.Infra.Persistence.Repositories.Dapper.Empresas;
 using RHTech.Teste.API.Infra.Persistence.Repositories.Dapper.Users;
+using RHTech.Teste.API.Interfaces.Application.Authservices;
 using RHTech.Teste.API.Interfaces.Infra.Persistence.Dapper;
 using RHTech.Teste.API.Interfaces.Infra.Persistence.Dapper.Empresas;
 using RHTech.Teste.API.Interfaces.Infra.Persistence.Dapper.Users;
@@ -20,7 +21,7 @@ namespace RHTech.Teste.API.Configurations
             services.AddScoped<IDadosAdmEmpresaRepository, DadosAdmEmpresaRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddSingleton<AuthService>();
+            services.AddScoped<IAuthService, AuthService>();
 
             return services;
         }

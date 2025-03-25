@@ -199,6 +199,7 @@ C:\Workspace\testeRHTech\RHTech.Teste.API\RHTech.Teste.API\obj\Debug\net8.0\RHTe
 C:\Workspace\testeRHTech\RHTech.Teste.API\RHTech.Teste.API\obj\Debug\net8.0\RHTech.Teste.API.csproj.CoreCompileInputs.cache
 C:\Workspace\testeRHTech\RHTech.Teste.API\RHTech.Teste.API\obj\Debug\net8.0\RHTech.Teste.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Workspace\testeRHTech\RHTech.Teste.API\RHTech.Teste.API\obj\Debug\net8.0\RHTech.Teste.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Workspace\testeRHTech\RHTech.Teste.API\RHTech.Teste.API\obj\Debug\net8.0\RHTech.Teste.API.sourcelink.json
 C:\Workspace\testeRHTech\RHTech.Teste.API\RHTech.Teste.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Workspace\testeRHTech\RHTech.Teste.API\RHTech.Teste.API\obj\Debug\net8.0\staticwebassets.development.json
 C:\Workspace\testeRHTech\RHTech.Teste.API\RHTech.Teste.API\obj\Debug\net8.0\staticwebassets\msbuild.RHTech.Teste.API.Microsoft.AspNetCore.StaticWebAssets.props

@@ -1,14 +1,15 @@
 ﻿using MediatR;
+using System.ComponentModel.DataAnnotations;
 
-namespace RHTech.Teste.API.Application.Users.Commands
+namespace RHTech.Teste.API.Application.Users.Commands;
+
+public class DeleteUserCommand : IRequest<bool>
 {
-    public class DeleteUserCommand : IRequest<bool>
-    {
-        public Guid UserId { get; set; }
+    [Required(ErrorMessage = "O ID do usuário é obrigatório.")]
+    public Guid UserId { get; set; }
 
-        public DeleteUserCommand(Guid userId)
-        {
-            UserId = userId;
-        }
+    public DeleteUserCommand(Guid userId)
+    {
+        UserId = userId;
     }
 }

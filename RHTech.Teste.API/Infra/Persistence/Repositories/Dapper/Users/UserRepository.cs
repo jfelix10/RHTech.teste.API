@@ -1,84 +1,108 @@
 ﻿using Dapper;
+using MediatR;
 using RHTech.Teste.API.Application.Users.Commands;
 using RHTech.Teste.API.Domain.Entities.Empresas;
 using RHTech.Teste.API.Domain.Entities.Users;
 using RHTech.Teste.API.Interfaces.Infra.Persistence.Dapper.Users;
 using System.Data;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
-namespace RHTech.Teste.API.Infra.Persistence.Repositories.Dapper.Users
+namespace RHTech.Teste.API.Infra.Persistence.Repositories.Dapper.Users;
+
+public class UserRepository : IUserRepository
 {
-    public class UserRepository : IUserRepository
+    private readonly IDbConnection _dbConnection;
+
+    public UserRepository(IDbConnection dbConnection)
     {
-        private readonly IDbConnection _dbConnection;
+        _dbConnection = dbConnection;
+    }
 
-        public UserRepository(IDbConnection dbConnection)
-        {
-            _dbConnection = dbConnection;
-        }
-
-        public async Task<bool> InsertAsync(User user)
-        {
-            var query = @"
+    public async Task<bool> InsertAsync(User user)
+    {
+        var rowsAffected = await _dbConnection.ExecuteAsync(
+            @"
                 INSERT INTO public.users (
                     id, email, role, datainclusao, name, idempresa
                 )
                 VALUES (
                     gen_random_uuid(), @Email, @Role, CURRENT_TIMESTAMP, @Name, @IdEmpresa
-                );";
+                );", user
+        );
 
-            // Retorna o ID do usuário criado
-            return await _dbConnection.ExecuteScalarAsync<bool>(query, user);
-        }
-
-        public async Task<DadosAdmEmpresa?> GetByIdAsync(Guid id)
-        {
-            var query = "SELECT * FROM DadosAdmEmpresa WHERE Id = @Id;";
-            return await _dbConnection.QueryFirstOrDefaultAsync<DadosAdmEmpresa?>(query, new { Id = id });
-        }
-
-        public async Task<IEnumerable<User>> GetAllAsync()
-        {
-            var query = "SELECT * FROM users WHERE ativo = true;";
-            var ret = await _dbConnection.QueryAsync<User>(query);
-            return ret;
-        }
-
-        public async Task<IEnumerable<DadosAdmEmpresa>> GetFilteredAsync(string filter)
-        {
-            var query = @"
-                SELECT * FROM DadosAdmEmpresa
-                WHERE LOWER(NomeAdministrador) LIKE LOWER(@Filter)
-                   OR CPF LIKE @Filter
-                   OR LOWER(Email) LIKE LOWER(@Filter);";
-
-            return await _dbConnection.QueryAsync<DadosAdmEmpresa>(query, new { Filter = $"%{filter}%" });
-        }
-
-        public async Task<bool> UpdateAsync(UpdateUserCommand request)
-        {
-            try
-            {
-                var sqlStr = $"UPDATE users SET name = @name, Role = @role WHERE id = '${request.UserId}'";
-                var rowsAffected = await _dbConnection.ExecuteAsync(sqlStr);
-                //var id = request.UserId;
-                //var rowsAffected = await _dbConnection.ExecuteAsync(
-                //@"UPDATE users SET name = @name, Role = @role WHERE id = @id;", new { id }
-                //);
-                return rowsAffected > 0;
-            }
-            catch (Exception e)
-            {
-                throw;
-            }
-        }
-
-        public async Task<bool> DeleteAsync(Guid id)
-        {
-            var rowsAffected = await _dbConnection.ExecuteAsync(
-            "UPDATE users SET ativo = false WHERE Id = @Id;", new { id }
-            );
-            return rowsAffected > 0;
-        }
+        return rowsAffected > 0;
     }
+
+    public async Task<bool> AddAsync(User user)
+    {
+        var rowsAffected = await _dbConnection.ExecuteAsync(
+            @"
+                INSERT INTO public.users (
+                    id, email, passwordhash, role, datainclusao, name, idempresa
+                )
+                VALUES (
+                    gen_random_uuid(), @Email, @PasswordHash, @Role, CURRENT_TIMESTAMP, @Name, @IdEmpresa
+                );", user
+        );
+
+        return rowsAffected > 0;
+    }
+
+    public async Task<DadosAdmEmpresa?> GetByIdAsync(Guid id)
+    {
+        var query = "SELECT * FROM DadosAdmEmpresa WHERE Id = @Id;";
+        return await _dbConnection.QueryFirstOrDefaultAsync<DadosAdmEmpresa?>(query, new { Id = id });
+    }
+
+    public async Task<IEnumerable<User>> GetAllAsync()
+    {
+        return await _dbConnection.QueryAsync<User>("SELECT * FROM public.users WHERE ativo = true;");
+    }
+
+    public async Task<bool> UpdateAsync(UpdateUserCommand request)
+    {
+        var rowsAffected = await _dbConnection.ExecuteAsync(
+            @"
+                UPDATE public.users
+                SET name = @Name, role = @Role
+                WHERE id = @Id;",
+            new
+            {
+                Name = request.Name,
+                Role = request.Role,
+                Id = request.UserId
+            }
+        );
+
+        return rowsAffected > 0;
+    }
+
+    public async Task<bool> DeactivateAsync(Guid userId)
+    {
+        var rowsAffected = await _dbConnection.ExecuteAsync(
+            "UPDATE public.users SET ativo = false WHERE id = @UserId;",
+            new { UserId = userId }
+        );
+
+        return rowsAffected > 0;
+    }
+
+    public async Task<bool> EmailExistsAsync(string email)
+    {
+        var exists = await _dbConnection.QueryFirstOrDefaultAsync<bool>(
+            "SELECT COUNT(1) FROM public.users WHERE email = @Email;",
+            new { Email = email }
+        );
+
+        return exists;
+    }
+
+    public async Task<bool> UserExistsAsync(Guid userId)
+    {
+        var exists = await _dbConnection.QueryFirstOrDefaultAsync<bool>(
+            "SELECT COUNT(1) FROM public.users WHERE id = @UserId;",
+            new { UserId = userId }
+        );
+
+        return exists;
+    }        
 }

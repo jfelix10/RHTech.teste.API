@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RHTech.Teste.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26c371f099cd50c49941535b9046bc2df810b363")]
 [assembly: System.Reflection.AssemblyProductAttribute("RHTech.Teste.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RHTech.Teste.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
