@@ -1,18 +1,28 @@
+using System.Diagnostics.CodeAnalysis;
+
 using Asp.Versioning.ApiExplorer;
 using RHTech.Teste.API.Configurations;
 using RHTech.Teste.API.Infra.Persistence.Contexts;
 
-var builder = WebApplication.CreateBuilder(args);
+[ExcludeFromCodeCoverage]
+public static class Program
+{
+    public static void Main(string[] args)
+    {
 
-// Add services to the container.
-builder.Services
-    .AddApiConfig()
-    .ResolveDependencies(builder.Configuration)
-    .AddEntityDataBaseConfig(builder.Configuration)
-    .AddAuthConfig(builder.Configuration)
-    .AddHttpClientConfig(builder.Configuration);
+        var builder = WebApplication.CreateBuilder(args);
 
-var app = builder.Build();
-IReadOnlyList<ApiVersionDescription> descriptions = app.DescribeApiVersions();
-app.UseApiConfig(app.Environment, descriptions);
-app.Run();
+        // Add services to the container.
+        builder.Services
+            .AddApiConfig()
+            .ResolveDependencies(builder.Configuration)
+            .AddEntityDataBaseConfig(builder.Configuration)
+            .AddAuthConfig(builder.Configuration)
+            .AddHttpClientConfig(builder.Configuration);
+
+        var app = builder.Build();
+        IReadOnlyList<ApiVersionDescription> descriptions = app.DescribeApiVersions();
+        app.UseApiConfig(app.Environment, descriptions);
+        app.Run();
+    }
+}

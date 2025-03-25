@@ -47,12 +47,6 @@ public class UserRepository : IUserRepository
         return rowsAffected > 0;
     }
 
-    public async Task<DadosAdmEmpresa?> GetByIdAsync(Guid id)
-    {
-        var query = "SELECT * FROM DadosAdmEmpresa WHERE Id = @Id;";
-        return await _dbConnection.QueryFirstOrDefaultAsync<DadosAdmEmpresa?>(query, new { Id = id });
-    }
-
     public async Task<IEnumerable<User>> GetAllAsync()
     {
         return await _dbConnection.QueryAsync<User>("SELECT * FROM public.users WHERE ativo = true;");

@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AEC078E4-9F34-4203-BE85-3F731C314B4C}|RHTech.Teste.API\\RHTech.Teste.API.csproj|c:\\workspace\\testerhtech\\rhtech.teste.api\\rhtech.teste.api\\infra\\persistence\\repositories\\dapper\\users\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEC078E4-9F34-4203-BE85-3F731C314B4C}|RHTech.Teste.API\\RHTech.Teste.API.csproj|solutionrelative:rhtech.teste.api\\infra\\persistence\\repositories\\dapper\\users\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5CE48265-921A-4758-A501-77E81D323CFE}|RHTech.Teste.API.Tests\\RHTech.Teste.API.Tests.csproj|c:\\workspace\\testerhtech\\rhtech.teste.api\\rhtech.teste.api.tests\\controllers\\empresacontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE48265-921A-4758-A501-77E81D323CFE}|RHTech.Teste.API.Tests\\RHTech.Teste.API.Tests.csproj|solutionrelative:rhtech.teste.api.tests\\controllers\\empresacontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CE48265-921A-4758-A501-77E81D323CFE}|RHTech.Teste.API.Tests\\RHTech.Teste.API.Tests.csproj|c:\\workspace\\testerhtech\\rhtech.teste.api\\rhtech.teste.api.tests\\controllers\\userscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CE48265-921A-4758-A501-77E81D323CFE}|RHTech.Teste.API.Tests\\RHTech.Teste.API.Tests.csproj|solutionrelative:rhtech.teste.api.tests\\controllers\\userscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEC078E4-9F34-4203-BE85-3F731C314B4C}|RHTech.Teste.API\\RHTech.Teste.API.csproj|c:\\workspace\\testerhtech\\rhtech.teste.api\\rhtech.teste.api\\controllers\\v1\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEC078E4-9F34-4203-BE85-3F731C314B4C}|RHTech.Teste.API\\RHTech.Teste.API.csproj|solutionrelative:rhtech.teste.api\\controllers\\v1\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEC078E4-9F34-4203-BE85-3F731C314B4C}|RHTech.Teste.API\\RHTech.Teste.API.csproj|c:\\workspace\\testerhtech\\rhtech.teste.api\\rhtech.teste.api\\controllers\\v1\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEC078E4-9F34-4203-BE85-3F731C314B4C}|RHTech.Teste.API\\RHTech.Teste.API.csproj|solutionrelative:rhtech.teste.api\\controllers\\v1\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CE48265-921A-4758-A501-77E81D323CFE}|RHTech.Teste.API.Tests\\RHTech.Teste.API.Tests.csproj|c:\\workspace\\testerhtech\\rhtech.teste.api\\rhtech.teste.api.tests\\handlers\\updateusercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CE48265-921A-4758-A501-77E81D323CFE}|RHTech.Teste.API.Tests\\RHTech.Teste.API.Tests.csproj|solutionrelative:rhtech.teste.api.tests\\handlers\\updateusercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CE48265-921A-4758-A501-77E81D323CFE}|RHTech.Teste.API.Tests\\RHTech.Teste.API.Tests.csproj|c:\\workspace\\testerhtech\\rhtech.teste.api\\rhtech.teste.api.tests\\handlers\\deleteusercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CE48265-921A-4758-A501-77E81D323CFE}|RHTech.Teste.API.Tests\\RHTech.Teste.API.Tests.csproj|solutionrelative:rhtech.teste.api.tests\\handlers\\deleteusercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CE48265-921A-4758-A501-77E81D323CFE}|RHTech.Teste.API.Tests\\RHTech.Teste.API.Tests.csproj|c:\\workspace\\testerhtech\\rhtech.teste.api\\rhtech.teste.api.tests\\handlers\\addusercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CE48265-921A-4758-A501-77E81D323CFE}|RHTech.Teste.API.Tests\\RHTech.Teste.API.Tests.csproj|solutionrelative:rhtech.teste.api.tests\\handlers\\addusercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5CE48265-921A-4758-A501-77E81D323CFE}|RHTech.Teste.API.Tests\\RHTech.Teste.API.Tests.csproj|c:\\workspace\\testerhtech\\rhtech.teste.api\\rhtech.teste.api.tests\\controllers\\authcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE48265-921A-4758-A501-77E81D323CFE}|RHTech.Teste.API.Tests\\RHTech.Teste.API.Tests.csproj|solutionrelative:rhtech.teste.api.tests\\controllers\\authcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsersControllerTests.cs",
-              "DocumentMoniker": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API.Tests\\Controllers\\UsersControllerTests.cs",
-              "RelativeDocumentMoniker": "RHTech.Teste.API.Tests\\Controllers\\UsersControllerTests.cs",
-              "ToolTip": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API.Tests\\Controllers\\UsersControllerTests.cs",
-              "RelativeToolTip": "RHTech.Teste.API.Tests\\Controllers\\UsersControllerTests.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAADwvzAAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T04:24:43.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DeleteUserCommandHandlerTests.cs",
-              "DocumentMoniker": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API.Tests\\Handlers\\DeleteUserCommandHandlerTests.cs",
-              "RelativeDocumentMoniker": "RHTech.Teste.API.Tests\\Handlers\\DeleteUserCommandHandlerTests.cs",
-              "ToolTip": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API.Tests\\Handlers\\DeleteUserCommandHandlerTests.cs",
-              "RelativeToolTip": "RHTech.Teste.API.Tests\\Handlers\\DeleteUserCommandHandlerTests.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwCoAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T04:21:50.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateUserCommandHandlerTests.cs",
-              "DocumentMoniker": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API.Tests\\Handlers\\UpdateUserCommandHandlerTests.cs",
-              "RelativeDocumentMoniker": "RHTech.Teste.API.Tests\\Handlers\\UpdateUserCommandHandlerTests.cs",
-              "ToolTip": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API.Tests\\Handlers\\UpdateUserCommandHandlerTests.cs",
-              "RelativeToolTip": "RHTech.Teste.API.Tests\\Handlers\\UpdateUserCommandHandlerTests.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowCUAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T04:23:20.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API\\Infra\\Persistence\\Repositories\\Dapper\\Users\\UserRepository.cs",
-              "RelativeDocumentMoniker": "RHTech.Teste.API\\Infra\\Persistence\\Repositories\\Dapper\\Users\\UserRepository.cs",
-              "ToolTip": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API\\Infra\\Persistence\\Repositories\\Dapper\\Users\\UserRepository.cs",
-              "RelativeToolTip": "RHTech.Teste.API\\Infra\\Persistence\\Repositories\\Dapper\\Users\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGsAAAABAAAA",
+              "Title": "EmpresaControllerTests.cs",
+              "DocumentMoniker": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API.Tests\\Controllers\\EmpresaControllerTests.cs",
+              "RelativeDocumentMoniker": "RHTech.Teste.API.Tests\\Controllers\\EmpresaControllerTests.cs",
+              "ToolTip": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API.Tests\\Controllers\\EmpresaControllerTests.cs",
+              "RelativeToolTip": "RHTech.Teste.API.Tests\\Controllers\\EmpresaControllerTests.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAAwE0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T04:16:20.663Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddUserCommandHandlerTests.cs",
-              "DocumentMoniker": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API.Tests\\Handlers\\AddUserCommandHandlerTests.cs",
-              "RelativeDocumentMoniker": "RHTech.Teste.API.Tests\\Handlers\\AddUserCommandHandlerTests.cs",
-              "ToolTip": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API.Tests\\Handlers\\AddUserCommandHandlerTests.cs",
-              "RelativeToolTip": "RHTech.Teste.API.Tests\\Handlers\\AddUserCommandHandlerTests.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowA0AAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T04:20:46.444Z",
+              "WhenOpened": "2025-03-25T23:36:01.837Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API\\Controllers\\V1\\UsersController.cs",
-              "RelativeDocumentMoniker": "RHTech.Teste.API\\Controllers\\V1\\UsersController.cs",
-              "ToolTip": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API\\Controllers\\V1\\UsersController.cs",
-              "RelativeToolTip": "RHTech.Teste.API\\Controllers\\V1\\UsersController.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAAAE0AAABiAAAA",
+              "Title": "AuthControllerTests.cs",
+              "DocumentMoniker": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API.Tests\\Controllers\\AuthControllerTests.cs",
+              "RelativeDocumentMoniker": "RHTech.Teste.API.Tests\\Controllers\\AuthControllerTests.cs",
+              "ToolTip": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API.Tests\\Controllers\\AuthControllerTests.cs",
+              "RelativeToolTip": "RHTech.Teste.API.Tests\\Controllers\\AuthControllerTests.cs",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAuwLUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T16:54:22.516Z",
+              "WhenOpened": "2025-03-25T23:31:21.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmpresaController.cs",
+              "DocumentMoniker": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API\\Controllers\\V1\\EmpresaController.cs",
+              "RelativeDocumentMoniker": "RHTech.Teste.API\\Controllers\\V1\\EmpresaController.cs",
+              "ToolTip": "C:\\Workspace\\testeRHTech\\RHTech.Teste.API\\RHTech.Teste.API\\Controllers\\V1\\EmpresaController.cs",
+              "RelativeToolTip": "RHTech.Teste.API\\Controllers\\V1\\EmpresaController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T19:13:54.533Z",
               "EditorCaption": ""
             }
           ]

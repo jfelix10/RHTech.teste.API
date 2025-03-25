@@ -1,32 +1,65 @@
-**/.classpath
-**/.dockerignore
-**/.env
-**/.git
-**/.gitignore
-**/.project
-**/.settings
-**/.toolstarget
-**/.vs
-**/.vscode
-**/*.*proj.user
-**/*.dbmdl
-**/*.jfm
-**/azds.yaml
-**/bin
-**/charts
-**/docker-compose*
-**/Dockerfile*
-**/node_modules
-**/npm-debug.log
-**/obj
-**/secrets.dev.yaml
-**/values.dev.yaml
-**/TestResults/
+# Build e arquivos do Visual Studio
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
-LICENSE
-README.md
-!**/.gitignore
-!.git/HEAD
-!.git/config
-!.git/packed-refs
-!.git/refs/heads/**
+# Diretórios gerados pelo dotnet
+*.vs/
+.vscode/
+.DS_Store
+.idea/
+
+# Configurações de build
+dist/
+out/
+*.lock.json
+*.log
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.bak
+*.swp
+*.sln.ide
+
+# Relatórios de Teste e Code Coverage
+TestResults/
+coverage/
+*.coverage
+*.coveragejson
+*.testlog
+
+# Pasta de relatórios de cobertura configurada no projeto
+resultadoTestes/
+
+# Configuração de dependências e caches do NuGet
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+.nuget/
+~$*
+
+# Configuração de secrets e arquivos sensíveis
+appsettings*.json
+!appsettings.Development.json
+appsettings.Test.json
+
+# Configurações de contêiner Docker
+*.dockerignore
+docker-compose.override.yml
+
+# Arquivos de log gerados em execução
+*.log
+logs/
+
+# Arquivos de publicação
+publish/
+wwwroot/
+
+# Arquivos relacionados ao PostgreSQL
+*.sql
+pg_data/

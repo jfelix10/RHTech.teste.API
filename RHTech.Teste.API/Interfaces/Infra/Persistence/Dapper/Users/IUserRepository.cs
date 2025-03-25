@@ -9,7 +9,6 @@ namespace RHTech.Teste.API.Interfaces.Infra.Persistence.Dapper.Users
         Task<bool> InsertAsync(User user);
         Task<bool> AddAsync(User user);
         Task<IEnumerable<User>> GetAllAsync();
-        Task<DadosAdmEmpresa?> GetByIdAsync(Guid id);
         Task<bool> UpdateAsync(UpdateUserCommand request);
         Task<bool> DeactivateAsync(Guid userId);
         Task<bool> EmailExistsAsync(string email);
